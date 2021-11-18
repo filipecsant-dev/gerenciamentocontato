@@ -45,3 +45,32 @@ footer{
   width: 25px;
   height: 25px;
 }
+
+.barra{
+  height: 100%;
+  width: 7rem;
+  background-color: #1b1d21;
+  position: fixed;
+  color: #fff;
+}
+
+.barra ul{
+  margin-top: 100px;
+  list-style: none;
+  margin-left: -20px;
+}
+
+.barra ul li{
+  margin-bottom: 70px;
+}
+
+.barra span{
+  font-size: 25px;
+}
+
+.barra p{
+  font-size: 10px;
+  text-align: center;
+  margin-left: -20px;
+  margin-top: 5px;
+}
