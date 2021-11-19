@@ -15,15 +15,23 @@ namespace teste.Controllers
             _dc = context;
         }
 
+        //Metodos
         public List<Contacts> GetAll()
         {
             List<Contacts> contacts = _dc.contacts.ToList();
             return contacts;
         }
 
+
+        //Pages
         public IActionResult Index()
         {
             return View(GetAll());
+        }
+
+        public IActionResult Cadastrar()
+        {
+            return View();
         }
 
     }

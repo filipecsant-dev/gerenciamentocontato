@@ -94,3 +94,4 @@ C:\Users\filipe.santos\Documents\Projetos\teste\obj\Debug\net5.0\teste.dll
 C:\Users\filipe.santos\Documents\Projetos\teste\obj\Debug\net5.0\ref\teste.dll
 C:\Users\filipe.santos\Documents\Projetos\teste\obj\Debug\net5.0\teste.pdb
 C:\Users\filipe.santos\Documents\Projetos\teste\obj\Debug\net5.0\teste.genruntimeconfig.cache
+C:\Users\filipe.santos\Documents\Projetos\teste\obj\Debug\net5.0\Razor\Views\Home\Cadastrar.cshtml.g.cs

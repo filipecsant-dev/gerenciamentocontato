@@ -13,9 +13,17 @@
     <header>
         <div class="container-main">
 
-            <div class="text-left">Nome da página</div>
+            <div class="text-left">Gerenciamento de contatos</div>
 
-            <div div class="text-righ">Home / Lista</div>
+            <div div class="text-righ">
+                @* Definindo pagina guia para subpágina *@
+                @if(ViewData["SubTitle"] != null) 
+                { 
+                    <a asp-area="" asp-controller="Home" asp-action="Index" style="text-decoration: none; color: #333;"> @ViewData["SubTitle"] </a> 
+                }
+                
+                @ViewData["Title"]
+            </div>
 
         </div>
     </header>
