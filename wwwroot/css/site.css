@@ -104,7 +104,7 @@ footer{
 
 
 @media only screen and (max-width: 800px) {
-  
+  /* Definindo posição da barra para horizontal */
   .barra{
     position: relative;
     display: flex;
@@ -138,5 +138,48 @@ footer{
     margin-left:2px;
   }
   
+
+  /* Definindo body para ajustar lista */
+  .container{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .table th{
+    font-size: 14px;
+  }
+
+  .btn{
+    font-size: 12px;
+  }
 }
 
+@media only screen and (max-width: 767px)
+{
+  /* Definindo body para ajustar lista */
+  .container{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .table th{
+    font-size: 10px;
+  }
+
+  .btn{
+    font-size: 10px;
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 520px)
+{
+  .table th{
+    font-size: 9px;
+  }
+
+  .btn{
+    font-size: 9px;
+    padding: 4px;
+  }
+}
