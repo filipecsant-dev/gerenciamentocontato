@@ -86,8 +86,6 @@ footer{
 
 .table{
   margin: 5%;
-  width: 100%;
-  margin-right: 10%;
 }
 
 .table th{
@@ -98,3 +96,47 @@ footer{
 .table .bold{
   font-weight: bold;
 }
+
+.body{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+@media only screen and (max-width: 800px) {
+  
+  .barra{
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding-left: 1%;
+  }
+
+  .barra ul{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  
+  .barra ul li{
+    margin-bottom: 0px;
+    margin-left: 50px;
+  }
+  
+  .barra span{
+    font-size: 20px;
+  }
+  
+  .barra p{
+    margin-top: 0px;
+    text-align: center;
+    font-size: 8px;
+    margin-left:2px;
+  }
+  
+}
+
