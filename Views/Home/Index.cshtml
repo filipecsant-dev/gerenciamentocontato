@@ -1,4 +1,4 @@
-﻿@model IEnumerable<teste.Models.Contacts>
+﻿@model IEnumerable<teste.Models.Entities.Contacts>
 
 @{
     ViewData["Title"] = "Início";
@@ -26,7 +26,9 @@
             <th>   
                 @Html.DisplayNameFor(model => model.Aniversario)
             </th>
+
             <th></th>
+
         </tr>
     </thead>
     <tbody>
@@ -51,6 +53,14 @@
 
             <th>
                 @Html.DisplayFor(modelItem => item.Aniversario)
+            </th>
+
+            <th>
+                <div class="btn group">
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-primary">Detalhes</a>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-info ml-1">Alterar</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger ml-1">Excluir</a>
+                </div>
             </th>
         </tr>
 }

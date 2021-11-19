@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using teste.Models;
+using teste.Models.Entities;
 
 namespace teste.Data
 {

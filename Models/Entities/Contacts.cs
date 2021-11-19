@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace teste.Models
+namespace teste.Models.Entities
 {
     public class Contacts
     {
