@@ -1,13 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using teste.Data;
 
 namespace teste
 {
@@ -24,6 +21,10 @@ namespace teste
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            //Conexão DB
+            string conexaodb = Configuration.GetConnectionString("ConexaoDB");
+            services.AddDbContext<DataContext>(opt => opt.UseMySql(conexaodb, ServerVersion.AutoDetect(conexaodb)));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

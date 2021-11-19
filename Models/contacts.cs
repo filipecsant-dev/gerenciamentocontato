@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace teste.Models
 {
-    public class contacts
+    public class Contacts
     {
         [Key]
         public int Id { get; set; }
@@ -14,6 +14,6 @@ namespace teste.Models
         public string Endereco { get; set; }
         public string Email { get; set; }
         public DateTime Aniversario { get; set; }
-        public ICollection<phone> Phone { get; set; }
+        public ICollection<Phone> Phone { get; set; }
     }
 }

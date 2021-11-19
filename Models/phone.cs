@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace teste.Models
 {
-    public class phone
+    public class Phone
     {
         [Key]
         public int Id { get; set; }
