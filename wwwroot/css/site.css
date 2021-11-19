@@ -55,13 +55,13 @@ footer{
 }
 
 .barra ul{
-  margin-top: 100px;
+  margin-top: 50px;
   list-style: none;
   margin-left: -20px;
 }
 
 .barra ul li{
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 
 .barra span{
@@ -73,4 +73,28 @@ footer{
   text-align: center;
   margin-left: -20px;
   margin-top: 5px;
+}
+
+.barra a{
+  text-decoration: none;
+  color: #fff
+}
+
+.barra a:hover{
+  color: #f2f2f2;
+}
+
+.table{
+  margin: 5%;
+  width: 100%;
+  margin-right: 10%;
+}
+
+.table th{
+  font-weight: normal;
+  text-align: center;
+}
+
+.table .bold{
+  font-weight: bold;
 }

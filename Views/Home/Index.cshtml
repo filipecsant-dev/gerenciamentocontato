@@ -5,29 +5,29 @@
 }
 
 <table class="table">
-    <thead>
+    <thead class="thead-light">
         <tr>
-            <th>
+            <th class="bold">
                 @Html.DisplayNameFor(model => model.Nome)
             </th>
 
-            <th>
+            <th class="bold">
                 @Html.DisplayNameFor(model => model.Sobrenome)
             </th>
 
-            <th>
+            <th class="bold">
                 @Html.DisplayNameFor(model => model.Endereco)
             </th>
 
-            <th>
+            <th class="bold">
                 @Html.DisplayNameFor(model => model.Email)
             </th>
 
-            <th>   
+            <th class="bold">   
                 @Html.DisplayNameFor(model => model.Aniversario)
             </th>
 
-            <th></th>
+            <th class="bold">Ações</th>
 
         </tr>
     </thead>
@@ -35,7 +35,7 @@
 @foreach (var item in Model)
 {
         <tr>
-            <th>
+            <th class="bold">
                 @Html.DisplayFor(modelItem => item.Nome)
             </th>
 

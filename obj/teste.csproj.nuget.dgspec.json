@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projetos\\teste\\teste.csproj": {}
+    "C:\\Users\\filipe.santos\\Documents\\Projetos\\teste\\teste.csproj": {}
   },
   "projects": {
-    "D:\\Projetos\\teste\\teste.csproj": {
+    "C:\\Users\\filipe.santos\\Documents\\Projetos\\teste\\teste.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\teste\\teste.csproj",
+        "projectUniqueName": "C:\\Users\\filipe.santos\\Documents\\Projetos\\teste\\teste.csproj",
         "projectName": "teste",
-        "projectPath": "D:\\Projetos\\teste\\teste.csproj",
-        "packagesPath": "C:\\Users\\Filipe\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\teste\\obj\\",
+        "projectPath": "C:\\Users\\filipe.santos\\Documents\\Projetos\\teste\\teste.csproj",
+        "packagesPath": "C:\\Users\\filipe.santos\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\filipe.santos\\Documents\\Projetos\\teste\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Filipe\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\filipe.santos\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
