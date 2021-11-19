@@ -5,6 +5,12 @@ namespace teste.Models.Repository
 {
     public interface IContactsRepository
     {
-         List<Contacts> GetAll();
+
+        // Task<IActionResult> Create(Contacts c);//Criar Contato
+        
+        // Task<IActionResult> Edit(int id, Contacts c);//Alterar Contato
+
+        // Task<IActionResult> Delete(int id); //Remover contato
+
     }
 }
