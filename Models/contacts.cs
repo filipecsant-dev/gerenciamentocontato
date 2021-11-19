@@ -13,7 +13,7 @@ namespace teste.Models
         public string Sobrenome { get; set; }
         public string Endereco { get; set; }
         public string Email { get; set; }
-        public DateTime Aniversario { get; set; }
+        public string Aniversario { get; set; }
         public ICollection<Phone> Phone { get; set; }
     }
 }

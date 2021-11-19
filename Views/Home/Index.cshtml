@@ -1,8 +1,58 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model IEnumerable<teste.Models.Contacts>
+
+@{
+    ViewData["Title"] = "Início";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">buildsadsa ASP.NET Core</a>.</p>
-</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Sobrenome)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Endereco)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+
+            <th>   
+                @Html.DisplayNameFor(model => model.Aniversario)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model)
+{
+        <tr>
+            <th>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </th>
+
+            <th>
+                @Html.DisplayFor(modelItem => item.Sobrenome)
+            </th>
+
+            <th>
+                @Html.DisplayFor(modelItem => item.Endereco)
+            </th>
+
+            <th>
+                @Html.DisplayFor(modelItem => item.Email)
+            </th>
+
+            <th>
+                @Html.DisplayFor(modelItem => item.Aniversario)
+            </th>
+        </tr>
+}
+    </tbody>
+</table>

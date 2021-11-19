@@ -1,32 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+using teste.Data;
 using teste.Models;
 
 namespace teste.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly DataContext _dc;
+        public HomeController(DataContext context)
         {
-            _logger = logger;
-        }
+            _dc = context;
+        }        
 
         public IActionResult Index()
         {
-            return View();
+            List<Contacts> contacts = _dc.contacts.ToList();
+            return View(contacts);
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
     }
 }

@@ -9,8 +9,8 @@ using teste.Data;
 namespace teste.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20211119012443_inicial")]
-    partial class inicial
+    [Migration("20211119014943_novamigration")]
+    partial class novamigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -25,8 +25,8 @@ namespace teste.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("Aniversario")
-                        .HasColumnType("datetime(6)");
+                    b.Property<string>("Aniversario")
+                        .HasColumnType("longtext");
 
                     b.Property<string>("Email")
                         .HasColumnType("longtext");

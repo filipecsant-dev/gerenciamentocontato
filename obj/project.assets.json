@@ -194,7 +194,7 @@
           "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
         }
       },
-      "MySqlConnector/1.3.7": {
+      "MySqlConnector/1.3.13": {
         "type": "package",
         "compile": {
           "lib/net5.0/MySqlConnector.dll": {}
@@ -203,12 +203,12 @@
           "lib/net5.0/MySqlConnector.dll": {}
         }
       },
-      "Pomelo.EntityFrameworkCore.MySql/5.0.0": {
+      "Pomelo.EntityFrameworkCore.MySql/5.0.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "[5.0.5, 6.0.0)",
-          "Microsoft.Extensions.DependencyInjection": "5.0.1",
-          "MySqlConnector": "1.3.7"
+          "Microsoft.EntityFrameworkCore.Relational": "[5.0.10, 6.0.0)",
+          "Microsoft.Extensions.DependencyInjection": "5.0.2",
+          "MySqlConnector": "1.3.13"
         },
         "compile": {
           "lib/netstandard2.1/Pomelo.EntityFrameworkCore.MySql.dll": {}
@@ -593,10 +593,10 @@
         "version.txt"
       ]
     },
-    "MySqlConnector/1.3.7": {
-      "sha512": "cceT5xpMPgInT8sVnmhZ62aouEux6dWJjOaMSsYW0TmLvK+gwG0eKw8J9NklTw+Q5Cch9Sd04OBux3GSITvABw==",
+    "MySqlConnector/1.3.13": {
+      "sha512": "o1qsijkFGvTslpuQdcJwG6IvdNOiVL7fRqvFZ0LTg04kfz+IzzwSWj4YwgTe0q0C3p0WqgaDXui5OEx6qgwebg==",
       "type": "package",
-      "path": "mysqlconnector/1.3.7",
+      "path": "mysqlconnector/1.3.13",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -620,21 +620,21 @@
         "lib/netstandard2.1/MySqlConnector.dll",
         "lib/netstandard2.1/MySqlConnector.xml",
         "logo.png",
-        "mysqlconnector.1.3.7.nupkg.sha512",
+        "mysqlconnector.1.3.13.nupkg.sha512",
         "mysqlconnector.nuspec"
       ]
     },
-    "Pomelo.EntityFrameworkCore.MySql/5.0.0": {
-      "sha512": "5T1c5sjnzhryUwD647l209Fsvhfzu1R5vS9G26HuT6T8tEtli9xTBJInge+17Cqy2Q2XTYug+vVfTk3gNH5Zjw==",
+    "Pomelo.EntityFrameworkCore.MySql/5.0.2": {
+      "sha512": "Vy6nC+FWWyZujmzEUN2mqoKsZi4xawtcJ8PJ861X7BG7EnJl+zH9uBvCCcO/qFOkS9zSCvWtYul3aFQOAJuGyA==",
       "type": "package",
-      "path": "pomelo.entityframeworkcore.mysql/5.0.0",
+      "path": "pomelo.entityframeworkcore.mysql/5.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icon.png",
         "lib/netstandard2.1/Pomelo.EntityFrameworkCore.MySql.dll",
         "lib/netstandard2.1/Pomelo.EntityFrameworkCore.MySql.xml",
-        "pomelo.entityframeworkcore.mysql.5.0.0.nupkg.sha512",
+        "pomelo.entityframeworkcore.mysql.5.0.2.nupkg.sha512",
         "pomelo.entityframeworkcore.mysql.nuspec"
       ]
     },
@@ -785,9 +785,9 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Microsoft.EntityFrameWorkCore >= 5.0.11",
-      "Microsoft.EntityFrameworkcore.design >= 5.0.11",
-      "Pomelo.EntityFrameworkCore.Mysql >= 4.0.0"
+      "Microsoft.EntityFrameworkCore >= 5.0.11",
+      "Microsoft.EntityFrameworkCore.Design >= 5.0.11",
+      "Pomelo.EntityFrameworkCore.Mysql >= 5.0.2"
     ]
   },
   "packageFolders": {
@@ -827,11 +827,11 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
-          "Microsoft.EntityFrameWorkCore": {
+          "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[5.0.11, )"
           },
-          "Microsoft.EntityFrameworkcore.design": {
+          "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
@@ -839,7 +839,7 @@
           },
           "Pomelo.EntityFrameworkCore.Mysql": {
             "target": "Package",
-            "version": "[4.0.0, )"
+            "version": "[5.0.2, )"
           }
         },
         "imports": [
@@ -863,17 +863,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "teste depende de Pomelo.EntityFrameworkCore.MySql (>= 4.0.0), mas Pomelo.EntityFrameworkCore.MySql 4.0.0 não foi encontrado. A melhor correspondência aproximada de Pomelo.EntityFrameworkCore.MySql 5.0.0 foi resolvida.",
-      "libraryId": "Pomelo.EntityFrameworkCore.MySql",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  }
 }

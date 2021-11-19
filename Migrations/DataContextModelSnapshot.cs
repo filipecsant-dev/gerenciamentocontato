@@ -23,8 +23,8 @@ namespace teste.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("Aniversario")
-                        .HasColumnType("datetime(6)");
+                    b.Property<string>("Aniversario")
+                        .HasColumnType("longtext");
 
                     b.Property<string>("Email")
                         .HasColumnType("longtext");
