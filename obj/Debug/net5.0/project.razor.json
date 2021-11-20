@@ -15629,6 +15629,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Projetos\\teste\\Views\\Home\\_CadastroView\\_Phone.cshtml",
+      "TargetPath": "Views\\Home\\_CadastroView\\_Phone.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Projetos\\teste\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -15649,6 +15654,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Projetos\\teste\\Views\\Home\\_CadastroView\\_Contacts.cshtml",
+      "TargetPath": "Views\\Home\\_CadastroView\\_Contacts.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Projetos\\teste\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -15666,6 +15676,16 @@
     {
       "FilePath": "d:\\Projetos\\teste\\Views\\Home\\Edit.cshtml",
       "TargetPath": "Views\\Home\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Projetos\\teste\\Views\\Home\\_EditView\\_Phone.cshtml",
+      "TargetPath": "Views\\Home\\_EditView\\_Phone.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Projetos\\teste\\Views\\Home\\_EditView\\_Contacts.cshtml",
+      "TargetPath": "Views\\Home\\_EditView\\_Contacts.cshtml",
       "FileKind": "mvc"
     }
   ],

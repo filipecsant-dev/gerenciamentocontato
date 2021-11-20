@@ -1,0 +1,10 @@
+@model List<teste.Models.Entities.Phone>
+
+
+
+@foreach (var item in Model)
+{
+    <input asp-for="@item.Id" type="hidden" name="TelId[]" class="form-control" />
+    <label asp-for="@item.Telefone" class="control-label"></label>
+    <input asp-for="@item.Telefone" name="Telefone[]" class="form-control" />
+}

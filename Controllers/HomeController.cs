@@ -4,9 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using teste.Data;
 using teste.Models.Entities;
+using teste.Models.ViewModel;
 using teste.Models.Repository;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
+using System;
 
 namespace teste.Controllers
 {
@@ -62,12 +64,20 @@ namespace teste.Controllers
         }
 
         //Page Alterar
-        public IActionResult Edit(int? id)
+        public async Task<IActionResult> Edit(int? id)
         {
             if(id == null) return RedirectToAction("Index");//Se não tiver o parametro Id retona para Index
 
-            Contacts c = _dc.contacts.Find(id);
-            return View(c);
+            ViewEdit ve = new ViewEdit();
+            ve.Contacts = _dc.contacts.Where(x => x.Id == id)
+                                     .AsNoTracking()
+                                     .FirstOrDefault();
+
+            ve.Phone = await _dc.phone.Where(x => x.ContactsId == id)
+                                      .AsNoTracking()
+                                      .ToListAsync();
+
+            return View(ve);
         }
 
         //Page Delete
@@ -84,30 +94,61 @@ namespace teste.Controllers
 
         //Metodo Cadastrar
         [HttpPost]
-        public async Task<IActionResult> Cadastrar(Contacts c, Phone p)
+        public async Task<IActionResult> Cadastrar(Contacts c, string[] Telefone)
         {
             if(!ModelState.IsValid) return View("Cadastrar"); //Caso não valide retorna
             
             //Salvamento do contato
-            _dc.contacts.Add(c);
+            _dc.contacts.Add(c);  
+            await _dc.SaveChangesAsync();  
+            
+            //Capturando os telefones
+            foreach(string phone in Telefone)
+            {
+                //Instanciando o telefone para receber dados para modificar
+                var p = new Phone();
+                p.ContactsId = c.Id;
+                p.Telefone = phone;
+                _dc.phone.Add(p);
+                
+            }
+
+            //Salvando Telefones
             await _dc.SaveChangesAsync();
 
-            p.ContactsId = c.Id;
-
-            _dc.phone.Add(p);
-            await _dc.SaveChangesAsync();
-
+    
             return RedirectToAction("Index");
         }
 
         //Metodo Alterar
         [HttpPost]
-        public async Task<IActionResult> Edit(int id, Contacts c)
+        public async Task<IActionResult> Edit(int id, Contacts c, int[] TelId, string[] Telefone)
         {
             if(!ModelState.IsValid) return View("Edit"); //Caso não valide retorna
-            
+
+            //Alteração de contato
             _dc.Entry(c).State = EntityState.Modified;
             await _dc.SaveChangesAsync();
+
+            int i = 0;//Identificador do parametro recebido do Id do usuario
+
+            foreach(string phone in Telefone)
+            {
+                //Instanciando o telefone para pegar dados e para o entity modificar
+                var p = new Phone();  
+                p.Id = TelId[i];//Pegando o Id do contato
+                p.ContactsId = c.Id;
+                p.Telefone = phone;
+
+                _dc.Entry(p).State = EntityState.Modified;
+                await _dc.SaveChangesAsync();
+            
+                i++;
+            }
+            
+            
+            
+
             return RedirectToAction("Index");
         }
 

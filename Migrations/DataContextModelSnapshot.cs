@@ -52,7 +52,7 @@ namespace teste.Migrations
                     b.Property<int>("ContactsId")
                         .HasColumnType("int");
 
-                    b.Property<string>("number")
+                    b.Property<string>("Telefone")
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");

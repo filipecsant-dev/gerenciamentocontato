@@ -1,4 +1,4 @@
-@model teste.Models.Entities.Contacts
+@model teste.Models.ViewModel.ViewCadastro
 
 @{
     ViewData["Title"] = "Cadastrar";
@@ -14,9 +14,14 @@
             
                 @* Carregando views *@
 
-                @Html.Partial("_CadastroView/_Contacts", Model)
-                @Html.Partial("_CadastroView/_Phone", Model)
-           
+                @await Html.PartialAsync("_CadastroView/_Contacts", Model)
+
+                <div id="novo_phone"> @await Html.PartialAsync("_CadastroView/_Phone", Model) </div>
+
+                
+
+                <button type="button" class="btn btn-info" id="add_phone">+</button>
+                
 
             <div class="form-group">
                 <input type="submit" value="Cadastrar" class="btn btn-default" />
@@ -28,3 +33,24 @@
 <div>
     <a asp-action="Index">Retornar</a>
 </div>
+
+
+
+@* Adicionando campo dinamicamente *@
+<script type="text/javascript">
+
+    $("#add_phone").click(function(){
+
+        var clone = document.getElementById('clone').cloneNode(true);
+        var destino = document.getElementById('novo_phone');
+        destino.appendChild (clone);
+
+        var camposClonados = clone.getElementsByTagName('input');
+
+        for(i=0; i<camposClonados.length;i++){
+            camposClonados[i].value = '';
+        }
+
+    });
+
+</script>

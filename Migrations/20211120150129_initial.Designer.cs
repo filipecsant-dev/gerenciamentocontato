@@ -8,7 +8,7 @@ using teste.Data;
 namespace teste.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20211120103623_initial")]
+    [Migration("20211120150129_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -54,7 +54,7 @@ namespace teste.Migrations
                     b.Property<int>("ContactsId")
                         .HasColumnType("int");
 
-                    b.Property<string>("number")
+                    b.Property<string>("Telefone")
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");

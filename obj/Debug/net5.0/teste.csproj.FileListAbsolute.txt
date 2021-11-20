@@ -98,5 +98,7 @@ D:\Projetos\teste\obj\Debug\net5.0\Razor\Views\Home\Cadastrar.cshtml.g.cs
 D:\Projetos\teste\obj\Debug\net5.0\Razor\Views\Home\Delete.cshtml.g.cs
 D:\Projetos\teste\obj\Debug\net5.0\Razor\Views\Home\Details.cshtml.g.cs
 D:\Projetos\teste\obj\Debug\net5.0\Razor\Views\Home\Edit.cshtml.g.cs
-D:\Projetos\teste\obj\Debug\net5.0\Razor\Views\Home\Cadastro\_Contacts.cshtml.g.cs
-D:\Projetos\teste\obj\Debug\net5.0\Razor\Views\Home\Cadastro\_Phone.cshtml.g.cs
+D:\Projetos\teste\obj\Debug\net5.0\Razor\Views\Home\_CadastroView\_Contacts.cshtml.g.cs
+D:\Projetos\teste\obj\Debug\net5.0\Razor\Views\Home\_CadastroView\_Phone.cshtml.g.cs
+D:\Projetos\teste\obj\Debug\net5.0\Razor\Views\Home\_EditView\_Contacts.cshtml.g.cs
+D:\Projetos\teste\obj\Debug\net5.0\Razor\Views\Home\_EditView\_Phone.cshtml.g.cs

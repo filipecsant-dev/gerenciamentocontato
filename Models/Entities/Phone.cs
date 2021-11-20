@@ -7,7 +7,7 @@ namespace teste.Models.Entities
     {
         [Key]
         public int Id { get; set; }
-        public string number { get; set; }
+        public string Telefone { get; set; }
         [ForeignKey("contacts")]
         public int ContactsId { get; set; }
         public virtual Contacts Contacts {get; set; }
