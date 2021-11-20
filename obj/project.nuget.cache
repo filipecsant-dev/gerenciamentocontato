@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "raHwr5RMmqn68eYtJlxhAlrd37YBUMCS5IkB5Yz+wK9jhScXE/qjs984WW5iCDFzySNRCOfBlnb5Qk3PKukqzA==",
+  "dgSpecHash": "JZQCNiCd8OSYPjB3KTuPOj7OerQSRA/65SMcHVUHydOYx9apk/Im1/X1vNsIolVvFHYkqO3EhSSQcp0JBlOaZA==",
   "success": true,
   "projectFilePath": "D:\\Projetos\\teste\\teste.csproj",
   "expectedPackageFiles": [
@@ -24,7 +24,8 @@
     "C:\\Users\\Filipe\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\5.0.2\\pomelo.entityframeworkcore.mysql.5.0.2.nupkg.sha512",
     "C:\\Users\\Filipe\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\Filipe\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
-    "C:\\Users\\Filipe\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"
+    "C:\\Users\\Filipe\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
+    "C:\\Users\\Filipe\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
   ],
   "logs": []
 }

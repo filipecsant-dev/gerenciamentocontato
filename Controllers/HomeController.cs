@@ -21,10 +21,26 @@ namespace teste.Controllers
         //--------- Pages -------
 
         //Page Inicial Lista
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string search)
         {
-            List<Contacts> contacts = await _dc.contacts.ToListAsync();
-            return View(contacts);
+            //Metodo de Buscar
+            if(!string.IsNullOrEmpty(search)) //Se tiver parametro de busca
+            {
+                //Exibe a lista de contatos filtrados
+                List<Contacts> c = await _dc.contacts
+                                      .Where(x => x.Nome.ToUpper().Contains(search.ToUpper()))
+                                      .AsNoTracking()
+                                      .ToListAsync();
+                return View(c);
+            }
+            else //Se não tiver parametro de busca
+            {
+                //Exibe a lista de contatos
+                List<Contacts> c = await _dc.contacts.ToListAsync();
+                return View(c);
+            }
+            
+            
         }
 
         //Page Create
@@ -36,41 +52,56 @@ namespace teste.Controllers
         //Page Detalhes
         public IActionResult Details(int? id)
         {
-            if(id == null) return RedirectToAction("Index");
-            Contacts contacts = _dc.contacts.Find(id);
-            return View();
+            if(id == null) return RedirectToAction("Index");//Se não tiver o parametro Id retona para Index
+
+            Contacts c = _dc.contacts.Where(x => x.Id == id)
+                                     .Include(x => x.Phone)
+                                     .AsNoTracking()
+                                     .FirstOrDefault();
+            return View(c);
         }
 
         //Page Alterar
         public IActionResult Edit(int? id)
         {
-            if(id == null) return RedirectToAction("Index");
-            Contacts contacts = _dc.contacts.Find(id);
-            return View(contacts);
+            if(id == null) return RedirectToAction("Index");//Se não tiver o parametro Id retona para Index
+
+            Contacts c = _dc.contacts.Find(id);
+            return View(c);
         }
 
         //Page Delete
         public IActionResult Delete(int? id)        
         {
-            if(id == null) return RedirectToAction("Index");
+            if(id == null) return RedirectToAction("Index");//Se não tiver o parametro Id retona para Index
+
             return View();
         }
+
+
 
         //------- Metodos -----------
 
         //Metodo Cadastrar
         [HttpPost]
-        public async Task<IActionResult> Cadastrar(Contacts c)
+        public async Task<IActionResult> Cadastrar(Contacts c, Phone p)
         {
             if(!ModelState.IsValid) return View("Cadastrar"); //Caso não valide retorna
             
+            //Salvamento do contato
             _dc.contacts.Add(c);
             await _dc.SaveChangesAsync();
+
+            p.ContactsId = c.Id;
+
+            _dc.phone.Add(p);
+            await _dc.SaveChangesAsync();
+
             return RedirectToAction("Index");
         }
 
         //Metodo Alterar
-        [HttpPut]
+        [HttpPost]
         public async Task<IActionResult> Edit(int id, Contacts c)
         {
             if(!ModelState.IsValid) return View("Edit"); //Caso não valide retorna

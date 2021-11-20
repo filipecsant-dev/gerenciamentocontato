@@ -18,7 +18,6 @@ D:\Projetos\teste\obj\Debug\net5.0\teste.MvcApplicationPartsAssemblyInfo.cache
 D:\Projetos\teste\obj\Debug\net5.0\teste.RazorAssemblyInfo.cache
 D:\Projetos\teste\obj\Debug\net5.0\teste.RazorAssemblyInfo.cs
 D:\Projetos\teste\obj\Debug\net5.0\staticwebassets\teste.StaticWebAssets.Manifest.cache
-D:\Projetos\teste\obj\Debug\net5.0\staticwebassets\teste.StaticWebAssets.xml
 D:\Projetos\teste\obj\Debug\net5.0\scopedcss\bundle\teste.styles.css
 D:\Projetos\teste\obj\Debug\net5.0\teste.TagHelpers.input.cache
 D:\Projetos\teste\obj\Debug\net5.0\teste.TagHelpers.output.cache
@@ -95,3 +94,9 @@ C:\Users\filipe.santos\Documents\Projetos\teste\obj\Debug\net5.0\ref\teste.dll
 C:\Users\filipe.santos\Documents\Projetos\teste\obj\Debug\net5.0\teste.pdb
 C:\Users\filipe.santos\Documents\Projetos\teste\obj\Debug\net5.0\teste.genruntimeconfig.cache
 C:\Users\filipe.santos\Documents\Projetos\teste\obj\Debug\net5.0\Razor\Views\Home\Cadastrar.cshtml.g.cs
+D:\Projetos\teste\obj\Debug\net5.0\Razor\Views\Home\Cadastrar.cshtml.g.cs
+D:\Projetos\teste\obj\Debug\net5.0\Razor\Views\Home\Delete.cshtml.g.cs
+D:\Projetos\teste\obj\Debug\net5.0\Razor\Views\Home\Details.cshtml.g.cs
+D:\Projetos\teste\obj\Debug\net5.0\Razor\Views\Home\Edit.cshtml.g.cs
+D:\Projetos\teste\obj\Debug\net5.0\Razor\Views\Home\Cadastro\_Contacts.cshtml.g.cs
+D:\Projetos\teste\obj\Debug\net5.0\Razor\Views\Home\Cadastro\_Phone.cshtml.g.cs

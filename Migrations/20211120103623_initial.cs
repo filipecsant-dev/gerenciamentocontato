@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace teste.Migrations
 {
-    public partial class novamigration : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -39,10 +39,9 @@ namespace teste.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    PhoneId = table.Column<int>(type: "int", nullable: false),
                     number = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    ContactsId = table.Column<int>(type: "int", nullable: true)
+                    ContactsId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -52,7 +51,7 @@ namespace teste.Migrations
                         column: x => x.ContactsId,
                         principalTable: "contacts",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 

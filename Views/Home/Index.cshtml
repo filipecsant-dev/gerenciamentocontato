@@ -4,6 +4,18 @@
     ViewData["Title"] = "Início";
 }
 
+
+
+@using (Html.BeginForm())
+{
+    <div class="" style="display: flex; flex-direction: row; flex-wrap: nowrap; margin-left:5%; position: absolute;">
+        <div class="form-outline" style="margin-right: 10px;">
+            @Html.TextBox("search")
+        </div>
+            <input class="btn btn-primary" type="submit" value="Buscar" style="padding: 2px;" />
+    </div>
+}
+
 <table class="table">
     <thead class="thead-light">
         <tr>

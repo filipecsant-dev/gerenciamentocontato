@@ -8,12 +8,12 @@ namespace teste.Models.Entities
     {
         [Key]
         public int Id { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Necessário digitar seu nome.")]
         public string Nome { get; set; }
         public string Sobrenome { get; set; }
         public string Endereco { get; set; }
         public string Email { get; set; }
         public string Aniversario { get; set; }
-        public ICollection<Phone> Phone { get; set; }
+        public virtual ICollection<Phone> Phone { get; set; }
     }
 }

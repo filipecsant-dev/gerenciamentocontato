@@ -12,5 +12,6 @@ namespace teste.Data
         //Instanciando conexões com tabelas
         public DbSet<Contacts> contacts { get; set; }
         public DbSet<Phone> phone { get; set; }
+
     }
 }
