@@ -48,14 +48,14 @@
 
 <div id="como-usar">
 ### Como usar?
-<br />
+<br /><br />
   
   <div id="pre-requisitos">
      ### Pré-Requisitos
      <p>- Nodejs</p>
      <p>- .Net</p>
      <p>- MySQL</p>
-     <p>- <p id="db">Banco de dados</div>
+     <p>- <div id="db">Banco de dados</div></p
   </div>
   <br />
   
