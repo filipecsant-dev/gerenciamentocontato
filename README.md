@@ -28,7 +28,7 @@
 
 ### Tecnologias
 <p id="tecnologias">
-- C#
+<p>- C#</p>
 - Html
 - Css
 - Javascript
