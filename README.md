@@ -1,7 +1,7 @@
 <h1 align="center">Gerenciamento de contatos</h1>
 
 <p align="center">Organize todos seus contatos com facilidade.</p>
-
+<br />
 * [Objetivos](#Objetivos)
 * [Features](#features)
 * [Tecnologias](#tecnologias)
@@ -11,9 +11,11 @@
    * [Banco de Dados](#db)
    * [Criando tabelas no BD](#insertdb)
 * [Autor](#autor)
+<br />
 
 ### Objetivo
 <p id="objetivo">Desenvolvimento de sistema utilizando CRUD, relacionamento um para muitos </p>
+<br /><br />
 
 ### Features
 
@@ -25,6 +27,7 @@
 - [x] Filtragem
 - [ ] Ordenação
 - [ ] Paginação
+<br />
 
 ### Tecnologias
 <p id="tecnologias">
@@ -33,13 +36,14 @@
   <p>- Css</p>
   <p>- Javascript</p>
 </p>
-
+<br />
 ### Frameworks
 <p id="frameworks">
   <p>- Asp.Net Core Mvc 5</p>
   <p>- EntityFramework 5</p>
   <p>- MySQL</p>
 </p>
+<br />
 
 <div id="como-usar">
 ### Como usar?
@@ -51,6 +55,7 @@
      <p>- MySQL</p>
      <p>- <p id="db">Banco de dados</div>
   </div>
+  <br />
   
   <div id="db">
    ### Banco de Dados
@@ -60,13 +65,15 @@
     <p> - Contacts</p>
      <p>- Phone</p>
   </div>
+  <br />
   
   <div id="insertdb">
    ### Criando Tabelas no Banco de Dados
     <p>Necessario usar o comando:</p>
    <p> -> dotnet ef database update</p>
   </div>
- 
+  <br />
+  
 </div>
 
 <div id="autor">
