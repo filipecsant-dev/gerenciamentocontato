@@ -280,5 +280,5 @@ footer{
 .details{
   display: flex;
   flex-direction: column;
-  margin-left: 5%;
+  width: 80%;
 }
