@@ -46,8 +46,8 @@
 </p>
 <br /><br />
 
-<div id="como-usar">
 ### Como usar?
+<div id="como-usar">
 <br /><br />
   
   <div id="pre-requisitos">
