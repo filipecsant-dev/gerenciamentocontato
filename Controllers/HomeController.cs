@@ -28,12 +28,38 @@ namespace teste.Controllers
             //Metodo de Buscar
             if(!string.IsNullOrEmpty(search)) //Se tiver parametro de busca
             {
-                //Exibe a lista de contatos filtrados
-                List<Contacts> c = await _dc.contacts
-                                      .Where(x => x.Nome.ToUpper().Contains(search.ToUpper()))
-                                      .AsNoTracking()
-                                      .ToListAsync();
+                int num; //Destinada a verificação de busca por Telefone
+                //Instanciando Lista de Contatos para armazenar todos contatos com Telefone parecido ao Search caso necessario
+                List<Contacts> c = new List<Contacts>();
+                if(Int32.TryParse(search, out num))//Verificar se a busca é de Nome ou Telefone
+                {//Search por Telefone
+
+                    //Criando uma lista com Telefone parecido ao do Search
+                    List<Phone> phone = await _dc.phone
+                                             .Where(x => x.Telefone.ToUpper().Contains(search.ToUpper()))
+                                             .AsNoTracking()
+                                             .ToListAsync();
+
+                    //Entrando na lista phone para inserir na lista contatos todos contatos com numeros identicos ao do Search
+                    foreach(var p in phone)
+                    {
+                        //Adicionando a lista de contatos
+                        c.Add( _dc.contacts
+                                  .Where(x => x.Id == p.ContactsId)
+                                  .AsNoTracking()
+                                  .FirstOrDefault());
+                    }
+                }
+                else
+                {//Search por Nome
+                    c = await _dc.contacts
+                                 .Where(x => x.Nome.ToUpper().Contains(search.ToUpper()))
+                                 .AsNoTracking()
+                                 .ToListAsync();
+                }
+
                 return View(c);
+                
             }
             else //Se não tiver parametro de busca
             {
@@ -145,9 +171,6 @@ namespace teste.Controllers
             
                 i++;
             }
-            
-            
-            
 
             return RedirectToAction("Index");
         }
