@@ -51,7 +51,7 @@
 <br /><br />
   
   <div id="pre-requisitos">
-     ### Pré-Requisitos
+     -> Pré-Requisitos
      <p>- Nodejs</p>
      <p>- .Net</p>
      <p>- MySQL</p>
@@ -59,7 +59,7 @@
   <br />
   
   <div id="db">
-   ### Banco de Dados
+   -> Banco de Dados
     <p>- Nome:</p>
      <p>- agenda</p>
    <p>- Tabelas:</p>
@@ -69,7 +69,7 @@
   <br />
   
   <div id="insertdb">
-   ### Criando Tabelas no Banco de Dados
+   -> Criando Tabelas no Banco de Dados
     <p>Necessario usar o comando:</p>
    <p> -> dotnet ef database update</p>
   </div>
@@ -77,8 +77,9 @@
   
 </div>
 
+### Autor
 <div id="autor">
-   ### Autor
+   
     <p>Filipe castro</p>
     <p>- https://github.com/filipecsant-dev</p>
   </div>
