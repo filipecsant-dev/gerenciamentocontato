@@ -15639,11 +15639,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Projetos\\teste\\Views\\Home\\Delete.cshtml",
-      "TargetPath": "Views\\Home\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "d:\\Projetos\\teste\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"

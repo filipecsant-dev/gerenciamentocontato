@@ -98,12 +98,16 @@
             //Abrindo modal e definindo
             $("#modal").modal();
             $('.modal-title').html('Excluir - '+ nome);
-            $('.modal-body').html('Tem certeza que deseja excluir '+ nome +' ?');
+            $('.modal-body').html('Tem certeza que deseja excluir <b>'+ nome +'</b> ?');
 
             //Se clicar em excluir faz um post para recuperar no back-end
             $('.modal').on("click", '#button1', function(){
                 //Passando para controller o id e excluindo
                 $.post('@Url.Action("Delete", "Home")', {id:id});
+
+                setTimeout(function() {
+                    location.reload();
+                },200);
             });
         });
 

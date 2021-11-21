@@ -95,7 +95,6 @@ C:\Users\filipe.santos\Documents\Projetos\teste\obj\Debug\net5.0\teste.pdb
 C:\Users\filipe.santos\Documents\Projetos\teste\obj\Debug\net5.0\teste.genruntimeconfig.cache
 C:\Users\filipe.santos\Documents\Projetos\teste\obj\Debug\net5.0\Razor\Views\Home\Cadastrar.cshtml.g.cs
 D:\Projetos\teste\obj\Debug\net5.0\Razor\Views\Home\Cadastrar.cshtml.g.cs
-D:\Projetos\teste\obj\Debug\net5.0\Razor\Views\Home\Delete.cshtml.g.cs
 D:\Projetos\teste\obj\Debug\net5.0\Razor\Views\Home\Details.cshtml.g.cs
 D:\Projetos\teste\obj\Debug\net5.0\Razor\Views\Home\Edit.cshtml.g.cs
 D:\Projetos\teste\obj\Debug\net5.0\Razor\Views\Home\_CadastroView\_Contacts.cshtml.g.cs
