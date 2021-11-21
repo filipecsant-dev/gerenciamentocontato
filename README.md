@@ -44,7 +44,7 @@
 <div id="como-usar">
 ### Como usar?
 
-  <div id="requisitos">
+  <div id="pre-requisitos">
    ### Pré-Requisitos
    - Nodejs
    - .Net
