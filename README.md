@@ -28,50 +28,50 @@
 
 ### Tecnologias
 <p id="tecnologias">
-<p>- C#</p>
-- Html
-- Css
-- Javascript
+  <p>- C#</p>
+  <p>- Html</p>
+  <p>- Css</p>
+  <p>- Javascript</p>
 </p>
 
 ### Frameworks
 <p id="frameworks">
-- Asp.Net Core Mvc 5
-- EntityFramework 5
-- MySQL
+  <p>- Asp.Net Core Mvc 5</p>
+  <p>- EntityFramework 5</p>
+  <p>- MySQL</p>
 </p>
 
 <div id="como-usar">
 ### Como usar?
 
   <div id="pre-requisitos">
-   ### Pré-Requisitos
-   - Nodejs
-   - .Net
-   - MySQL
-   - <p id="db">Banco de dados</div>
+     ### Pré-Requisitos
+     <p>- Nodejs</p>
+     <p>- .Net</p>
+     <p>- MySQL</p>
+     <p>- <p id="db">Banco de dados</div>
   </div>
   
   <div id="db">
    ### Banco de Dados
-    - Nome:
-     - agenda
-   - Tabelas:
-     - Contacts
-     - Phone
+    <p>- Nome:</p>
+     <p>- agenda</p>
+   <p>- Tabelas:</p>
+    <p> - Contacts</p>
+     <p>- Phone</p>
   </div>
   
   <div id="insertdb">
    ### Criando Tabelas no Banco de Dados
-    Necessario usar o comando:
-    - dotnet ef database update
+    <p>Necessario usar o comando:</p>
+   <p> -> dotnet ef database update</p>
   </div>
  
 </div>
 
 <div id="autor">
    ### Autor
-    Filipe castro
-    - https://github.com/filipecsant-dev
+    <p>Filipe castro</p>
+    <p>- https://github.com/filipecsant-dev</p>
   </div>
 
