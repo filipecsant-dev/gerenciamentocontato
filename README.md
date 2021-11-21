@@ -27,7 +27,7 @@
 - [x] Filtragem
 - [ ] Ordenação
 - [ ] Paginação
-<br />
+<br /><br />
 
 ### Tecnologias
 <p id="tecnologias">
@@ -36,18 +36,20 @@
   <p>- Css</p>
   <p>- Javascript</p>
 </p>
-<br />
+<br /><br />
+
 ### Frameworks
 <p id="frameworks">
   <p>- Asp.Net Core Mvc 5</p>
   <p>- EntityFramework 5</p>
   <p>- MySQL</p>
 </p>
-<br />
+<br /><br />
 
 <div id="como-usar">
 ### Como usar?
-
+<br />
+  
   <div id="pre-requisitos">
      ### Pré-Requisitos
      <p>- Nodejs</p>
@@ -72,7 +74,7 @@
     <p>Necessario usar o comando:</p>
    <p> -> dotnet ef database update</p>
   </div>
-  <br />
+  <br /><br />
   
 </div>
 
