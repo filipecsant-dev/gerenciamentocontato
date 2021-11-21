@@ -25,12 +25,14 @@ namespace teste.Controllers
         //Page Inicial Lista
         public async Task<IActionResult> Index(string search)
         {
+            //Instanciando Lista de Contatos para ser uzado em diversos modelos de negocio
+            List<Contacts> c = new List<Contacts>();
+
             //Metodo de Buscar
             if(!string.IsNullOrEmpty(search)) //Se tiver parametro de busca
             {
                 int num; //Destinada a verificação de busca por Telefone
-                //Instanciando Lista de Contatos para armazenar todos contatos com Telefone parecido ao Search caso necessario
-                List<Contacts> c = new List<Contacts>();
+                
                 if(Int32.TryParse(search, out num))//Verificar se a busca é de Nome ou Telefone
                 {//Search por Telefone
 
@@ -64,7 +66,7 @@ namespace teste.Controllers
             else //Se não tiver parametro de busca
             {
                 //Exibe a lista de contatos
-                List<Contacts> c = await _dc.contacts.ToListAsync();
+                c = await _dc.contacts.ToListAsync();
                 return View(c);
             }
             
@@ -124,6 +126,15 @@ namespace teste.Controllers
         {
             if(!ModelState.IsValid) return View("Cadastrar"); //Caso não valide retorna
             
+            //Verificação se já existe este contato por Nome
+            var cont = _dc.contacts
+                          .Where(x => x.Nome == c.Nome)
+                          .AsNoTracking()
+                          .FirstOrDefault();
+
+            if(cont != null) return View("Cadastrar");//Se existe ele retorna messagem
+
+
             //Salvamento do contato
             _dc.contacts.Add(c);  
             await _dc.SaveChangesAsync();  
@@ -131,12 +142,15 @@ namespace teste.Controllers
             //Capturando os telefones
             foreach(string phone in Telefone)
             {
-                //Instanciando o telefone para receber dados para modificar
-                var p = new Phone();
-                p.ContactsId = c.Id;
-                p.Telefone = phone;
-                _dc.phone.Add(p);
-                
+                //Pega somente o campo que não foi vazio
+                if(phone != null)
+                {
+                    //Instanciando o telefone para receber dados para modificar
+                    var p = new Phone();
+                    p.ContactsId = c.Id;
+                    p.Telefone = phone;
+                    _dc.phone.Add(p);
+                }
             }
 
             //Salvando Telefones
@@ -166,9 +180,13 @@ namespace teste.Controllers
                 p.ContactsId = c.Id;
                 p.Telefone = phone;
 
-                _dc.Entry(p).State = EntityState.Modified;
+                //Verificação se existe um numero de telefone no campo
+                //Se não existe remove a row
+                if(phone != null) _dc.Entry(p).State = EntityState.Modified;
+                else _dc.phone.Remove(p);
+
                 await _dc.SaveChangesAsync();
-            
+                
                 i++;
             }
 
