@@ -22,6 +22,7 @@ namespace teste.Models.Entities
         public string Email { get; set; }
 
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
+        [Required(AllowEmptyStrings = true)]
         public DateTime Aniversario { get; set; }
         
         public virtual ICollection<Phone> Phone { get; set; }

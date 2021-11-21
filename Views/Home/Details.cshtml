@@ -49,17 +49,20 @@
             
         @* Exibição de telefones *@
 
-            <dt class="col-sm-2">
-                Telefone(s):
-            </dt>
-            <dd class="col-sm-10">
+            
+            
 
                 @foreach (var item in Model.Phone)
                 {
-                    <span style="margin-right: 15px;">@Html.DisplayFor(modelItem => item.Telefone)</span>
+                    <dt class="col-sm-2">
+                        Telefone:
+                    </dt>
+                    <dd class="col-sm-10">
+                        <span style="margin-right: 15px;">@Html.DisplayFor(modelItem => item.Telefone)</span>
+                    </dd>
                 }
 
-            </dd>
+            
 
         </dl>
     </div>
