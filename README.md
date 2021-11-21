@@ -51,8 +51,7 @@
 <br /><br />
   
   <div id="pre-requisitos">
-     -> Pré-Requisitos
-    <br />
+     <p>-> Pré-Requisitos</p>
      <p>- Nodejs</p>
      <p>- .Net</p>
      <p>- MySQL</p>
@@ -60,8 +59,7 @@
   <br />
   
   <div id="db">
-   -> Banco de Dados
-    <br />
+   <p>-> Banco de Dados</p>
     <p>- Nome:</p>
      <p>- agenda</p>
    <p>- Tabelas:</p>
@@ -71,8 +69,8 @@
   <br />
   
   <div id="insertdb">
-   -> Criando Tabelas no Banco de Dados
-    <br />
+   <p>-> Criando Tabelas no Banco de Dados</p>
+
     <p>Necessario usar o comando:</p>
    <p> -> dotnet ef database update</p>
   </div>
