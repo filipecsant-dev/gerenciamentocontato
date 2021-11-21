@@ -69,3 +69,9 @@
  
 </div>
 
+<div id="autor">
+   ### Autor
+    Filipe castro
+    - https://github.com/filipecsant-dev
+  </div>
+
