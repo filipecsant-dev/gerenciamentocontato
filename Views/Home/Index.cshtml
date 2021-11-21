@@ -44,37 +44,71 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model)
-{
-        <tr>
-            <th class="bold">
-                @Html.DisplayFor(modelItem => item.Nome)
-            </th>
 
-            <th>
-                @Html.DisplayFor(modelItem => item.Sobrenome)
-            </th>
+    
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th class="bold">
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </th>
 
-            <th>
-                @Html.DisplayFor(modelItem => item.Endereco)
-            </th>
+                <th>
+                    @Html.DisplayFor(modelItem => item.Sobrenome)
+                </th>
 
-            <th>
-                @Html.DisplayFor(modelItem => item.Email)
-            </th>
+                <th>
+                    @Html.DisplayFor(modelItem => item.Endereco)
+                </th>
 
-            <th>
-                @Html.DisplayFor(modelItem => item.Aniversario)
-            </th>
+                <th>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </th>
 
-            <th>
-                <div class="btn group">
-                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-primary">Detalhes</a>
-                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-info ml-1">Alterar</a>
-                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger ml-1">Excluir</a>
-                </div>
-            </th>
-        </tr>
-}
+                <th>
+                    @Html.DisplayFor(modelItem => item.Aniversario)
+                </th>
+
+                <th>
+                    <div class="btns">
+                        <div class="btn group">
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-primary">Detalhes</a>
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-info ml-1">Alterar</a>
+                            <button class="btn btn-sm btn-danger ml-1" id="excluir" data-id="@item.Id" data-nome="@item.Nome">Excluir</button>
+                        </div>
+                    </div>
+                </th>
+            </tr>
+        }
+
     </tbody>
 </table>
+
+
+
+@section scripts {
+
+    <script>
+        
+        $('.btns').on("click", '#excluir', function(){
+            var form = $(this);
+            var id = form.attr('data-id');
+            var nome = form.attr('data-nome');
+
+            //Abrindo modal e definindo
+            $("#modal").modal();
+            $('.modal-title').html('Excluir - '+ nome);
+            $('.modal-body').html('Tem certeza que deseja excluir '+ nome +' ?');
+
+            //Se clicar em excluir faz um post para recuperar no back-end
+            $('.modal').on("click", '#button1', function(){
+                //Passando para controller o id e excluindo
+                $.post('@Url.Action("Delete", "Home")', {id:id});
+            });
+        });
+
+        
+
+    
+    </script>
+}

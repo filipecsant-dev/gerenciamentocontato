@@ -39,13 +39,19 @@
     </div>
 
     @* --- Fim Barra lateral --- *@
-
+    
+    @* Incluindo Modal (Usado para delete) *@
+    @await Html.PartialAsync("Components/ModalSmall")
+    @* ---- Fim Modal ---- *@
+    
     <div class="container">
         <div class="container-main body">
                 @RenderBody()
         </div>
     </div>
 
+    
+    
 
     <footer class="border-top footer text-muted">
         <div class="container-main">

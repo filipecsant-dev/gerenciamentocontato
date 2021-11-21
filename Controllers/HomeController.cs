@@ -108,14 +108,6 @@ namespace teste.Controllers
             return View(ve);
         }
 
-        //Page Delete
-        public IActionResult Delete(int? id)        
-        {
-            if(id == null) return RedirectToAction("Index");//Se não tiver o parametro Id retona para Index
-
-            return View();
-        }
-
 
 
         //------- Metodos -----------
@@ -215,11 +207,19 @@ namespace teste.Controllers
         }
 
         //Metodo Remover
-        [HttpDelete]
-        public async Task<IActionResult> Delete(int id, Contacts c)
+        [HttpPost]
+        public async Task<IActionResult> Delete(int id)
         {
+            //Pegando dados do contato
+            Contacts c = _dc.contacts   
+                            .Where(x => x.Id == id)
+                            .AsNoTracking()
+                            .FirstOrDefault();
+
+            //Removendo contato
             _dc.contacts.Remove(c);
             await _dc.SaveChangesAsync();
+
             return RedirectToAction("Index");
         }
 

@@ -15669,6 +15669,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Projetos\\teste\\Views\\Home\\Components\\ModalSmall.cshtml",
+      "TargetPath": "Views\\Home\\Components\\ModalSmall.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Projetos\\teste\\Views\\Home\\Details.cshtml",
       "TargetPath": "Views\\Home\\Details.cshtml",
       "FileKind": "mvc"
