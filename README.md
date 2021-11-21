@@ -71,7 +71,7 @@
   <div id="insertdb">
    <p>-> Criando Tabelas no Banco de Dados</p>
 
-    <p>Necessario usar o comando:</p>
+    <p>Comando:</p>
    <p> -> dotnet ef database update</p>
   </div>
   <br /><br />
