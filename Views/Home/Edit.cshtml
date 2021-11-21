@@ -40,6 +40,7 @@
 
 @* Adicionando campo dinamicamente *@
 <script type="text/javascript">
+    
     $(document).ready(function() {
         //Criando contador para mostrar a div e apos criar mais div        
         var i = 0;
@@ -51,6 +52,7 @@
             if(i == 0)
             {
                 destino.style.display = 'block';
+        
                 i ++;
             }
             else
@@ -64,8 +66,18 @@
                 for(i=0; i<camposClonados.length;i++){
                     camposClonados[i].value = '';
                 }
+
+                
             }
+            
         });
+
     });
+
+    $('#Telefone').mask('(99) 99999-9999');
+
+    
+
+
 
 </script>

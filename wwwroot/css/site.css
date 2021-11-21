@@ -102,6 +102,21 @@ footer{
   justify-content: space-around;
 }
 
+.buscar{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.btn-search:hover{
+  background-color: rgb(73, 73, 73);
+  
+}
+
+.table{
+  margin-top: 40px;
+}
+
 
 @media only screen and (max-width: 800px) {
   /* Definindo posição da barra para horizontal */
@@ -152,6 +167,7 @@ footer{
   .btn{
     font-size: 12px;
   }
+
 }
 
 @media only screen and (max-width: 767px)
@@ -162,26 +178,60 @@ footer{
     margin-left: 0;
   }
 
-  .table th{
-    font-size: 10px;
+  .aniversario{
+    display: none;
   }
 
-  .btn{
-    font-size: 10px;
-    padding: 5px;
+  .endereco{
+    display: none;
+  }
+
+  .buscar{
+    height: 30px;
+    width: 150px;
+    font-size: 13px;
+    margin-right: 5px;
+  }
+  form .btn{
+    width: 60px;
+    height: 30px;
+    font-size: 13px;
+  }
+
+  .table{
+    margin-top: 40px;
   }
 }
 
 @media only screen and (max-width: 520px)
 {
   /* Definindo body para ajustar lista */
-  .table th{
-    font-size: 9px;
+  .aniversario{
+    display: none;
   }
 
-  .btn{
-    font-size: 9px;
-    padding: 4px;
+  .endereco{
+    display: none;
+  }
+
+  .email{
+    display: none;
+  }
+
+  .buscar{
+    height: 25px;
+    width: 130px;
+    font-size: 12px;
+    margin-right: 5px;
+  }
+  form .btn{
+    width: 60px;
+    height: 25px;
+    font-size: 12px;
+  }
+
+  .table{
+    margin-top: 40px;
   }
 }
 
