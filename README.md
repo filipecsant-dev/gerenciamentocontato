@@ -55,7 +55,6 @@
      <p>- Nodejs</p>
      <p>- .Net</p>
      <p>- MySQL</p>
-     <p>- <div id="db">Banco de dados</div></p
   </div>
   <br />
   
