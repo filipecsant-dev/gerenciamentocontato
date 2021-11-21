@@ -5,16 +5,16 @@
 }
 
 
+@* Barra de Pesquisa *@
+<form>
+    <div class="form-inline" style="display: flex; flex-direction: row; flex-wrap: nowrap; margin-left:3%; position: absolute;">
+        <input class="form-control mr-sm-2 buscar" type="textbox" name="search" placeholder="Nome ou Telefone" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0 btn-search" type="submit" value="Buscar" style="border-color:#1b1d21; color:#1b1d21;">Buscar</button>
+    </div>
+</form>
 
-@using (Html.BeginForm())
-{
-    <form>
-        <div class="form-inline" style="display: flex; flex-direction: row; flex-wrap: nowrap; margin-left:3%; position: absolute;">
-            <input class="form-control mr-sm-2 buscar" type="textbox" name="search" placeholder="Nome ou Telefone" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0 btn-search" type="submit" value="Buscar" style="border-color:#1b1d21; color:#1b1d21;">Buscar</button>
-        </div>
-    </form>
-}
+@* Paginação *@
+
 
 <table class="table">
     <thead class="thead-light">

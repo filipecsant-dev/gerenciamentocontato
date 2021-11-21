@@ -38,7 +38,8 @@ footer{
 
 .footer{
   font-size: 14px;
-  margin-top: 3px;
+  margin-top: 20px;
+  position: relative;
 }
 
 .text-righ img{
@@ -251,4 +252,12 @@ footer{
   .btn a{
     margin-bottom: 2px;
   }
+}
+
+
+/* Pagina detalhes */
+.details{
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
 }

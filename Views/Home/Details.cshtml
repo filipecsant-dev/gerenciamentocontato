@@ -5,69 +5,70 @@
     ViewData["SubTitle"] = "Início / ";
 }
 
-<h1>Detalhes</h1>
+<div class="details">
+    <h1 class="details-title">Detalhes</h1>
+    <br />
 
-<div class="table">
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Nome)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Nome)
-        </dd>
+    <div class="details-table">
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Nome)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Nome)
+            </dd>
 
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Sobrenome)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Sobrenome)
-        </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Sobrenome)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Sobrenome)
+            </dd>
 
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Endereco)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Endereco)
-        </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Endereco)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Endereco)
+            </dd>
 
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Email)
-        </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Email)
+            </dd>
 
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Aniversario)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Aniversario)
-        </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Aniversario)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Aniversario)
+            </dd>
 
-        
-    @* Exibição de telefones *@
+            
+        @* Exibição de telefones *@
 
-        <dt class="col-sm-2">
-            Telefone(s):
-        </dt>
-        <dd class="col-sm-10">
+            <dt class="col-sm-2">
+                Telefone(s):
+            </dt>
+            <dd class="col-sm-10">
 
-            @foreach (var item in Model.Phone)
-            {
-                <span style="margin-right: 15px;">@Html.DisplayFor(modelItem => item.Telefone)</span>
-            }
+                @foreach (var item in Model.Phone)
+                {
+                    <span style="margin-right: 15px;">@Html.DisplayFor(modelItem => item.Telefone)</span>
+                }
 
-        </dd>
+            </dd>
 
-    </dl>
+        </dl>
+    </div>
+
+
+    <a style="width: 95%;" asp-action="Index" type="button" class="btn btn-dark">Retornar</a>
+   
 </div>
 
 
-<div>|
-    <a asp-action="Index">Retornar</a>
-</div>
 
 
-@section css {
-    <link rel="stylesheet" href="~/wwwroot/css/details.css" />
-}

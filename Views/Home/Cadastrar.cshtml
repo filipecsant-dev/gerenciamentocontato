@@ -5,33 +5,39 @@
     ViewData["SubTitle"] = "Início / ";
 }
 
-<h4>Cadastrar contato</h4>
+<div class="details">
+    <h1>Cadastrar contato</h1>
+    <br />
 
-<div class="row">
-    <div class=".col-md-4">
-        <form asp-action="Cadastrar">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            
-                @* Carregando views *@
-
-                @await Html.PartialAsync("_CadastroView/_Contacts", Model)
-
-                <div id="novo_phone"> @await Html.PartialAsync("_CadastroView/_Phone", Model) </div>
-
+    <div class="details-table">
+        <div class=".col-md-4">
+            <form asp-action="Cadastrar">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 
-                @* Botão de adicionar telefone *@
-                <button type="button" class="btn btn-info" id="add_phone">+</button>
-                
+                    @* Carregando views *@
 
-            <div class="form-group">
-                <input type="submit" value="Cadastrar" class="btn btn-default" />
-             </div>
-        </form>
+                    @await Html.PartialAsync("_CadastroView/_Contacts", Model)
+
+                    <div id="novo_phone"> @await Html.PartialAsync("_CadastroView/_Phone", Model) </div>
+
+                    <br />
+                    @* Botão de adicionar telefone *@
+                    <button type="button" class="btn btn-info" style="width: 100%;" id="add_phone">+ Adicionar Telefone</button>
+                    <br />
+                    <br />
+
+                <div class="form-group">
+                    <input type="submit" value="Cadastrar" style="width: 100%;" class="btn btn-success" />
+                </div>
+                
+            </form>
+        </div>
     </div>
-</div>
 
-<div>
-    <a asp-action="Index">Retornar</a>
+    <br />
+    <br />
+    <a style="width: 100%;" asp-action="Index" type="button" class="btn btn-dark">Retornar</a>
+
 </div>
 
 
