@@ -102,3 +102,4 @@ D:\Projetos\teste\obj\Debug\net5.0\Razor\Views\Home\_CadastroView\_Contacts.csht
 D:\Projetos\teste\obj\Debug\net5.0\Razor\Views\Home\_CadastroView\_Phone.cshtml.g.cs
 D:\Projetos\teste\obj\Debug\net5.0\Razor\Views\Home\_EditView\_Contacts.cshtml.g.cs
 D:\Projetos\teste\obj\Debug\net5.0\Razor\Views\Home\_EditView\_Phone.cshtml.g.cs
+D:\Projetos\teste\obj\Debug\net5.0\Razor\Views\Home\_EditView\_AddPhone.cshtml.g.cs

@@ -15664,6 +15664,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Projetos\\teste\\Views\\Home\\_EditView\\_AddPhone.cshtml",
+      "TargetPath": "Views\\Home\\_EditView\\_AddPhone.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Projetos\\teste\\Views\\Home\\Details.cshtml",
       "TargetPath": "Views\\Home\\Details.cshtml",
       "FileKind": "mvc"

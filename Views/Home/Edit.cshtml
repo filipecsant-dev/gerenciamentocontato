@@ -11,14 +11,19 @@
     <div class=".col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            
-                @await Html.PartialAsync("_EditView/_Contacts", Model.Contacts)
-            @* Telefones *@
 
-          
+                @* Carregando views *@
+
+                @await Html.PartialAsync("_EditView/_Contacts", Model.Contacts)
+                
                 @await Html.PartialAsync("_EditView/_Phone", Model.Phone)
                 
-        
+                @* View de adicionar telefone - carregada somente se add telefone *@
+                <div id="novo_phone" style="display: none;"> @await Html.PartialAsync("_EditView/_AddPhone", Model.MyPhone) </div>
+
+                @* Botão de adicionar telefone *@
+                <button type="button" class="btn btn-info" id="add_phone">+</button>
+                
 
             <div class="form-group">
                 <input type="submit" value="Atualizar" class="btn btn-default" />
@@ -30,3 +35,37 @@
 <div>
     <a asp-action="Index">Retornar</a>
 </div>
+
+
+
+@* Adicionando campo dinamicamente *@
+<script type="text/javascript">
+    $(document).ready(function() {
+        //Criando contador para mostrar a div e apos criar mais div        
+        var i = 0;
+
+        $("#add_phone").click(function(){
+            
+            var destino = document.getElementById('novo_phone');
+            
+            if(i == 0)
+            {
+                destino.style.display = 'block';
+                i ++;
+            }
+            else
+            {
+                var clone = document.getElementById('clone').cloneNode(true);
+                
+                destino.appendChild (clone);
+
+                var camposClonados = clone.getElementsByTagName('input');
+
+                for(i=0; i<camposClonados.length;i++){
+                    camposClonados[i].value = '';
+                }
+            }
+        });
+    });
+
+</script>

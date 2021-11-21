@@ -145,7 +145,7 @@ namespace teste.Controllers
                 //Pega somente o campo que não foi vazio
                 if(phone != null)
                 {
-                    //Instanciando o telefone para receber dados para modificar
+                    //Instanciando o telefone para receber dados para adicionar
                     var p = new Phone();
                     p.ContactsId = c.Id;
                     p.Telefone = phone;
@@ -162,7 +162,7 @@ namespace teste.Controllers
 
         //Metodo Alterar
         [HttpPost]
-        public async Task<IActionResult> Edit(int id, Contacts c, int[] TelId, string[] Telefone)
+        public async Task<IActionResult> Edit(int id, Contacts c, int[] TelId, string[] Telefone, string[] AddTelefone)
         {
             if(!ModelState.IsValid) return View("Edit"); //Caso não valide retorna
 
@@ -172,6 +172,7 @@ namespace teste.Controllers
 
             int i = 0;//Identificador do parametro recebido do Id do usuario
 
+            //Modificando Telefone
             foreach(string phone in Telefone)
             {
                 //Instanciando o telefone para pegar dados e para o entity modificar
@@ -189,6 +190,26 @@ namespace teste.Controllers
                 
                 i++;
             }
+
+            //Adicionando bool para verificar se existe telefone para adicionar
+            bool verifytel = false;
+            //Adicionando Telefone
+            foreach(string addphone in AddTelefone)
+            {
+                if(addphone != null)
+                {
+                    var addp = new Phone();
+                    addp.ContactsId = c.Id;
+                    addp.Telefone = addphone;
+                    _dc.phone.Add(addp);
+
+                    verifytel = true;//Liberando para salvar
+                }
+            }
+
+            //Se existir telefone para adicionar salva
+            if(verifytel) await _dc.SaveChangesAsync();
+            
 
             return RedirectToAction("Index");
         }

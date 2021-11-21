@@ -7,5 +7,7 @@ namespace teste.Models.ViewModel
     {
         public Contacts Contacts { get; set; }
         public List<Phone> Phone { get; set; }
+
+        public List<Phone> MyPhone { get; set; }
     }
 }
