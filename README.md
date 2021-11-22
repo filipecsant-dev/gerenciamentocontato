@@ -81,7 +81,7 @@
 ### Autor
 <div id="autor">
    
-    <p>Filipe castro</p>
-    <p>- https://github.com/filipecsant-dev</p>
+    Filipe castro
+    https://github.com/filipecsant-dev
   </div>
 
