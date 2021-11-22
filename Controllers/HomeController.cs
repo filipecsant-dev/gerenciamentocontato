@@ -116,7 +116,6 @@ namespace teste.Controllers
         [HttpPost]
         public async Task<IActionResult> Cadastrar(Contacts c, string[] Telefone)
         {
-            Console.WriteLine(c.Aniversario);
             //Verificação se já existe este contato por Nome
             var cont = _dc.contacts
                           .Where(x => x.Nome == c.Nome)
@@ -127,10 +126,7 @@ namespace teste.Controllers
           
 
             if(!ModelState.IsValid) return View("Cadastrar"); //Caso não valide retorna
-            
-            if(c.Sobrenome == null) c.Sobrenome = "-";
-            if(c.Endereco == null) c.Endereco = "-";
-            if(c.Email == null) c.Email = "-";
+          
             //Salvamento do contato
             _dc.contacts.Add(c);  
             await _dc.SaveChangesAsync();  

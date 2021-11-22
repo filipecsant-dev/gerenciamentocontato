@@ -1,5 +1,5 @@
 {
-  "FilePath": "d:\\Projetos\\teste\\teste.csproj",
+  "FilePath": "c:\\Users\\filipe.santos\\Documents\\Projetos\\gerenciamentocontato\\teste.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15619,78 +15619,78 @@
   "RootNamespace": "teste",
   "Documents": [
     {
-      "FilePath": "d:\\Projetos\\teste\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Projetos\\teste\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Projetos\\teste\\Views\\Home\\_CadastroView\\_Phone.cshtml",
-      "TargetPath": "Views\\Home\\_CadastroView\\_Phone.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Projetos\\teste\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Projetos\\teste\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Projetos\\teste\\Views\\Home\\Cadastrar.cshtml",
-      "TargetPath": "Views\\Home\\Cadastrar.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Projetos\\teste\\Views\\Home\\_CadastroView\\_Contacts.cshtml",
-      "TargetPath": "Views\\Home\\_CadastroView\\_Contacts.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Projetos\\teste\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Projetos\\teste\\Views\\Home\\_EditView\\_AddPhone.cshtml",
-      "TargetPath": "Views\\Home\\_EditView\\_AddPhone.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Projetos\\teste\\Views\\Home\\Components\\ModalSmall.cshtml",
+      "FilePath": "c:\\Users\\filipe.santos\\Documents\\Projetos\\gerenciamentocontato\\Views\\Home\\Components\\ModalSmall.cshtml",
       "TargetPath": "Views\\Home\\Components\\ModalSmall.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Projetos\\teste\\Views\\Home\\Details.cshtml",
+      "FilePath": "c:\\Users\\filipe.santos\\Documents\\Projetos\\gerenciamentocontato\\Views\\Home\\Details.cshtml",
       "TargetPath": "Views\\Home\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Projetos\\teste\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\Users\\filipe.santos\\Documents\\Projetos\\gerenciamentocontato\\Views\\Home\\_EditView\\_Contacts.cshtml",
+      "TargetPath": "Views\\Home\\_EditView\\_Contacts.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Projetos\\teste\\Views\\Home\\Edit.cshtml",
+      "FilePath": "c:\\Users\\filipe.santos\\Documents\\Projetos\\gerenciamentocontato\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\filipe.santos\\Documents\\Projetos\\gerenciamentocontato\\Views\\Home\\_EditView\\_AddPhone.cshtml",
+      "TargetPath": "Views\\Home\\_EditView\\_AddPhone.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\filipe.santos\\Documents\\Projetos\\gerenciamentocontato\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\filipe.santos\\Documents\\Projetos\\gerenciamentocontato\\Views\\Home\\Edit.cshtml",
       "TargetPath": "Views\\Home\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Projetos\\teste\\Views\\Home\\_EditView\\_Phone.cshtml",
+      "FilePath": "c:\\Users\\filipe.santos\\Documents\\Projetos\\gerenciamentocontato\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\filipe.santos\\Documents\\Projetos\\gerenciamentocontato\\Views\\Home\\Cadastrar.cshtml",
+      "TargetPath": "Views\\Home\\Cadastrar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\filipe.santos\\Documents\\Projetos\\gerenciamentocontato\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\filipe.santos\\Documents\\Projetos\\gerenciamentocontato\\Views\\Home\\_EditView\\_Phone.cshtml",
       "TargetPath": "Views\\Home\\_EditView\\_Phone.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Projetos\\teste\\Views\\Home\\_EditView\\_Contacts.cshtml",
-      "TargetPath": "Views\\Home\\_EditView\\_Contacts.cshtml",
+      "FilePath": "c:\\Users\\filipe.santos\\Documents\\Projetos\\gerenciamentocontato\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\filipe.santos\\Documents\\Projetos\\gerenciamentocontato\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\filipe.santos\\Documents\\Projetos\\gerenciamentocontato\\Views\\Home\\_CadastroView\\_Contacts.cshtml",
+      "TargetPath": "Views\\Home\\_CadastroView\\_Contacts.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\filipe.santos\\Documents\\Projetos\\gerenciamentocontato\\Views\\Home\\_CadastroView\\_Phone.cshtml",
+      "TargetPath": "Views\\Home\\_CadastroView\\_Phone.cshtml",
       "FileKind": "mvc"
     }
   ],
