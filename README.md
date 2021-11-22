@@ -26,8 +26,6 @@
 - [x] Listagem 
 - [x] Detalhes
 - [x] Filtragem
-- [ ] Ordenação
-- [ ] Paginação
 <br /><br />
 
 ### Tecnologias
