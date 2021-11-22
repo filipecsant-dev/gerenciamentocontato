@@ -2,15 +2,15 @@
 
 <p align="center">Organize todos seus contatos com facilidade.</p>
 <br />
-<a href="objetivo">Objetivos</a>
-<a href="features">Features</a>
-<a href="tecnologias">Tecnologias</a>
-<a href="frameworks">Frameworks</a>
-<a href="como-usar">Como usar</a>
-<a href="pre-requisitos">Pre Requisitos</a>
-<a href="db">Banco de Dados</a>
-<a href="insertdb">Criando tabelas no BD</a>
-<a href="autor">Autor</a>
+<a href="objetivo">Objetivos</a><br />
+<a href="features">Features</a><br />
+<a href="tecnologias">Tecnologias</a><br />
+<a href="frameworks">Frameworks</a><br />
+<a href="como-usar">Como usar</a><br />
+<a href="pre-requisitos">   Pre Requisitos</a><br />
+<a href="db">   Banco de Dados</a><br />
+<a href="insertdb">   Criando tabelas no BD</a><br />
+<a href="autor">Autor</a><br />
 <br />
 
 ### Objetivo
