@@ -2,7 +2,7 @@
 
 <p align="center">Organize todos seus contatos com facilidade.</p>
 <br />
-<h4> Sumário </h4>
+<h3>Sumário</h3>
 <a href="#objetivo">Objetivos</a><br />
 <a href="#features">Features</a><br />
 <a href="#tecnologias">Tecnologias</a><br />
